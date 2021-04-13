@@ -1,0 +1,15 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "System Documentation",
+        "description": "Esta é a documentação da API de CSV",
+        "version": "1.0.0",
+        "contact": {
+            "email": "helderafonsoss@hotmail.com"
+        }
+    }, 
+    "paths": {
+        "/": {
+        }
+    }
+}
