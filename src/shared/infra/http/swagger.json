@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "System Documentation",
+        "description": "Esta é a documentação da API de CSV",
+        "version": "1.0.0",
+        "contact": {
+            "email": "helderafonsoss@hotmail.com"
+        }
+    }, 
+    "paths": {
+        "/users/create-csv": {
+            "post": {
+                "tags": ["Users"],
+                "summary": "Cria um novo usuário a partir do CSV",
+                "description": "Esta rota serve para criar um novo usuário a partir e um arquivo CSV passando: Data de nascimeno(formato Date), idade, nome.",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "file": {
+                                        "type": "string",
+                                        "format": "binary"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Usuários criados."
+                    },
+                    "400": {
+                        "description": "Os campos enviados estão vazios ou inválidos."
+                    }
+                    
+                }
+            }
+        }
+    }
+}
