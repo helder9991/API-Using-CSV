@@ -22,7 +22,7 @@
 
 
 3 - Rode o comando na pasta raiz do projeto:
-  - ```npm typeorm migration:run```  ou ```yarn typeorm migration:run```
+  - ```npm run typeorm migration:run```  ou ```yarn typeorm migration:run```
 
   Nota: Este comando irá criar as tabelas no banco de dados
 
