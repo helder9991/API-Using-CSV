@@ -39,6 +39,39 @@
                     
                 }
             }
+        },
+        "/users/list": {
+            "post": {
+                "tags": ["Users"],
+                "summary": "Lista todos os usuarios",
+                "description": "Esta rota serve para listar todos os usuarios.",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "example": [
+                                        {
+                                            "id": "69d9b8e5-640c-4a3d-873b-92c3da7e918d",
+                                            "name": "John Doe",
+                                            "years_old": 18,
+                                            "birthday": "2002-04-17T03:00:00.000Z"
+                                        },
+                                        {
+                                            "id": "69d9b8e5-640c-4a3d-873b-92c3da7e918d735ae726-9157-4945-b963-b274fc32ce0e",
+                                            "name": "John Doe 2",
+                                            "years_old": 21,
+                                            "birthday": "1999-02-11T02:00:00.000Z"
+                                        }
+                                    ]
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
